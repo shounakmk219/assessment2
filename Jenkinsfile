@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+			bat 'echo "in jenkinsfile"'
                 bat 'mvn build clean'
             }
         }
